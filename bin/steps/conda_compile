@@ -27,3 +27,5 @@ if [ -f requirements.txt ]; then
     puts-step "Installing dependencies using Pip"
     pip install -r requirements.txt  --exists-action=w | indent
 fi
+
+rm -rf $BUILD_DIR/miniconda3/pkgs/conda-env-*
